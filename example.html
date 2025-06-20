@@ -1,0 +1,85 @@
+<html>
+<head>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      flex: 1; /* grow to fill available space */
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+    }
+
+    h1, h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .report-section {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>Tailwind</header>
+
+  <main>
+    <section class="report-section">
+      <h2>Solutions</h2>
+      <p>Marketing</p>
+      <p>Insights</p>
+      <p>Analytics</p>
+    </section>
+
+    <section class="report-section">
+      <h2>Support</h2>
+      <p>Submit ticket</p>
+      <p>Documentation</p>
+      <p>Guids</p>
+    </section>
+
+    <section class="report-section">
+      <h2>Company</h2>
+      <p>About</p>
+      <p>Bling</p>
+      <p>Jobs</p>
+      <p>Press</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Company. All rights reserved.
+  </footer>
+</body>
+</html>
