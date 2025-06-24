@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            .container{
+              height: 100%;
+              width: 100%;
+              grid-template-rows: 100px 1fr;
+              background-color: red; 
+              display: grid;
+            } 
+            .header {
+                width: 100%;
+                background-color: aquamarine;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+            .main{
+                background-color: palegreen;
+                display: grid;
+                grid-template-columns: 200px 1fr; 
+            }
+            .sidebar {
+              background-color: blueviolet;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              flex-direction: column;
+              gap: 20px;
+            }
+            .content{
+                background-color: pink;
+                display: grid;
+                grid-template-rows: 1fr 100px;
+            }
+            .footer {
+              background-color: yellow;
+            }
+        </style>
+        <body>
+            <div class="container">
+                <div class="header">
+                <image src="" alt="Random Image" />
+                <div>Home</div>
+                <div>About Us</div>
+                <div> Contact Us</div>
+                <div class="main">
+                    <div class="sidebar">
+                    <div> Student Form</div>
+                    <div>Student Report</div>
+                    <div class="content">
+                        <div class="data">data</div>
+                        <div class="footer">footer</div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </body>
+    </head>
+</html>

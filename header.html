@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <style>
+      .header {
+        display: flex;
+        height: 75px;
+        width: 100px;
+        background-color: aquamarine;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 100px;
+        box-shadow: 10px 4px 1px;
+      }
+      .icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .block2 {
+        display: flex;
+        margin-top: 75px; /* to avoid overlap with fixed header */
+        height: calc(100vh - 75px);
+      }
+      .sidebar {
+        flex: 0 0 100px;
+        background-color: blueviolet;
+      }
+      .block3 {
+        flex: 1;
+        background-color: red;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .content {
+        padding: 20px;
+        width: 100%; /* changed from auto */
+        background-color: lightgray;
+        height: 200px;
+        box-sizing: border-box; /* ensures padding doesn't overflow */
+      }
+      .footer {
+        background-color: green;
+        height: auto;
+      }
+      .sidebar-content{
+        font-size: 16px;
+        color: white;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* space between header items */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="icon">
+        <div><svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path>
+</svg></div>
+        <div> Home </div>
+        </div>
+       <div> About-Us </div>
+       <div> Contact-US </div>
+    </header>
+
+
+  </body>
+</html>
